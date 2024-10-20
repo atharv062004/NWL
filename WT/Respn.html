@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Movie Highlights</title>
+        <style>
+                /* Basic Styles */
+                body {
+                        font-family: Arial, sans-serif;
+                        margin: 0;
+                        padding: 0;
+                        box-sizing: border-box;
+                }
+
+                header,
+                footer {
+                        background-color: #333;
+                        color: white;
+                        text-align: center;
+                        padding: 20px 0;
+
+                }
+
+                h1 {
+                        margin: 0;
+                }
+
+                main {
+                        display: grid;
+                        grid-template-columns: 1fr;
+                        gap: 10px;
+                        padding: 20px;
+                }
+
+                .content {
+                        padding: 20px;
+                        text-align: center;
+                        width: 200px;
+                        height: 330px;
+                        background-color: #f4f4f4;
+                        padding: 10px;
+                        border: 1px solid #ddd;
+                        box-sizing: border-box;
+                }
+
+                .content img {
+                        max-width: 100%;
+                        height: auto;
+                        border-radius: 8px;
+                        width: 100%;
+                        height: 165px;
+                        object-fit: contain;
+                        border-radius: 20px;
+                }
+
+                .content h2 {
+                        font-weight: 100;
+                }
+
+                @media (min-width: 600px) {
+                        main {
+                                grid-template-columns: repeat(2, 1fr);
+                        }
+                }
+
+                @media (min-width: 900px) {
+                        main {
+                                grid-template-columns: repeat(4, 1fr);
+                        }
+                }
+        </style>
+</head>
+
+<body>
+        <header>
+                <h1>Movie Highlights</h1>
+        </header>
+        <main>
+                <div class="content">
+                        <h2>The Shawshank Redemption</h2>
+                        <img src="asset/the shawshank redemption.jpg" alt="The Shawshank Redemption">
+                        <p>A story of hope and friendship.</p>
+                </div>
+                <div class="content">
+                        <h2>Inception</h2>
+                        <img src="asset/inception.jpg" alt="Inception">
+                        <p>A mind-bending thriller that will leave you questioning reality.</p>
+                </div>
+                <div class="content">
+                        <h2>The Godfather</h2>
+                        <img src="asset/The_godfather.jpg" alt="The Godfather">
+                        <p>The classic tale of family and power.</p>
+                </div>
+                <div class="content">
+                        <h2>The Dark Knight</h2>
+                        <img src="asset/The_dark_knight.jpg" alt="The Dark Knight">
+                        <p>Batman faces his greatest challenge yet.</p>
+                </div>
+                <div class="content">
+                        <h2>Forrest Gump</h2>
+                        <img src="asset/Forrest Gump.jpg" alt="Forrest Gump">
+                        <p>The extraordinary life of an ordinary man.</p>
+                </div>
+                <div class="content">
+                        <h2>Fight Club</h2>
+                        <img src="asset/Fight club.jpg" alt="Fight Club">
+                        <p>An underground fight club evolves into something much more.</p>
+                </div>
+                <div class="content">
+                        <h2>The Matrix</h2>
+                        <img src="asset/the matrix.jpg" alt="The Matrix">
+                        <p>A hacker discovers the true nature of reality.</p>
+                </div>
+        </main>
+        <footer>
+                <p>&copy; 2024 Movie Highlights</p>
+        </footer>
+</body>
+
+</html>
